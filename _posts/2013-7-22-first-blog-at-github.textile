@@ -1,0 +1,7 @@
+---
+layout: post
+title: my first blog at github
+---
+「有些事，让别人相信就行了，可别把自己也绕进去了。」
+
+喜欢骑行的码农!~未完待续~~~
