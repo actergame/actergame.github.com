@@ -1,0 +1,40 @@
+---
+layout: post
+title: git 管理本地代码
+---
+
+在debian,ubuntu 等系统安装git核心包:
+
+~$ apt-get install git-core
+
+用git 管理本地代码
+
+一般svn 目录会在/home下，在/home下建立/git
+
+~$ mkdir git
+
+~$ chmod 777 git
+
+~$ cd git/
+新建工程acter
+~$ mkdir acter
+~$ chmod 777 acter
+~$ git --bare init
+
+~$ cd ~/
+
+回到主目录 取出acter.git
+
+~$ git clnoe /home/git/acter testgit
+
+~$ cd testgit
+
+之后在testgit 里面添加文件管理你的代码
+
+~$ vi README.md
+
+~$ git add .
+
+~$ git commit -m "first Projects"
+~$ git push origin master
+
