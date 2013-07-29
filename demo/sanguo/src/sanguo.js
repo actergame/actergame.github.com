@@ -86,16 +86,19 @@ game.load = function(container)
 	this.stage.on(ns.game.events[1],function(e){
 		console.log("x:"+e.eventX);
 		console.log("y:"+e.eventY);
+		var x ;
 		if(e.eventX >400)
 			{
-				game.mainView.farbg.rectX = e.eventX-160;
+				x = e.eventX-160;
+				//game.mainView.farbg.x = e.eventX-160;
 				//game.mainView.nearbg.rectX = e.eventX+170;
 			}else{
-				game.mainView.farbg.rectX = e.eventX;
+				x = e.eventX
+				//game.mainView.farbg.x = e.eventX;
 				//game.mainView.nearbg.rectX = e.eventX;
 			}
-			//console.log(farX);
-			//game.mainView.farbg.setRect([50,0,1650,640]);
+			
+			game.mainView.farbg.setRect([x,0,900,600]);
 			console.log("farbg.rectX:"+game.mainView.farbg.rectX);
 			//console.log("farbg:"+game.mainView.farbg.rectY);
 			
