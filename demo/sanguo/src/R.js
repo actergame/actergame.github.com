@@ -11,7 +11,6 @@ R.mainSources =
 [
 	{id:"background", size:1672, src:"image/main/background.png"},
 	{id:"farscene", size:396, src:"image/main/farscene.png"},
-	{id:"mainbg", size:1672, src:"image/main/mainscene.png"},
 ];
 R.initMain = function(images)
 {

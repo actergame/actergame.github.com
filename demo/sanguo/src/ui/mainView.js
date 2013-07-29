@@ -32,7 +32,7 @@ mainView.prototype.init = function(images)
 	this.farbg = new Q.Bitmap({id:"farbg",image:ns.R.farbg, transformEnabled:true});
 	//this.nearbg = new Q.Bitmap({id:"mainbg",image:ns.R.mainbg, transformEnabled:true});
 	
-	this.container.addChild(this.bg,this.farbg,this.nearbg);
+	this.container.addChild(this.bg,this.farbg);
 };
 mainView.prototype.update = function()
 {
