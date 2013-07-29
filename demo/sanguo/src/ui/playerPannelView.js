@@ -1,0 +1,1 @@
+playerPannelView.js
